@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppProps } from 'next/app';
-import UiLayout from '@/components/ui/ui-layout'; // Adjust the import path as needed
+import AppHero from '@/components/ui/app-hero';
 import '@/styles/globals.css';
 
 const links = [
@@ -12,12 +12,12 @@ const links = [
   { label: 'Instagram', path: 'https://instagram.com/bark.protocol' },
 ];
 
-function MyApp({ Component, pageProps }: AppProps) {
+function BarkBOTApp({ Component, pageProps }: AppProps) {
   return (
-    <UiLayout links={links}>
+    <AppHero links={links}>
       <Component {...pageProps} />
-    </UiLayout>
+    </AppHero>
   );
 }
 
-export default MyApp;
+export default BarkBOTApp;

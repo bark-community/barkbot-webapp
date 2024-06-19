@@ -13,7 +13,7 @@ export const UiLayout: React.FC<UiLayoutProps> = ({ children, links }) => {
       <header className="bg-white text-black py-4 shadow-md">
         <div className="container mx-auto flex justify-between items-center px-4">
           <div className="flex items-center space-x-4">
-            <img src="/logo.png" alt="Bark Logo" className="h-12" />
+            <img src="/barkbot-logo-dark.svg" alt="BARK Protocol Logo" className="h-12" />
             <h1 className="text-3xl font-bold"></h1>
           </div>
           <nav className="space-x-4 hidden md:flex">

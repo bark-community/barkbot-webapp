@@ -11,7 +11,7 @@ const faqs = [
 
 const FaqCards: React.FC = () => {
   return (
-    <section className="bg-gradient-to-r from-light-gray to-white py-16 px-4">
+    <section className="bg-light-gray py-16 px-4">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4 font-poppins">Frequently Asked Questions</h2>
         <p className="text-md md:text-lg text-gray-700 mb-8 font-poppins">Find answers to common questions about BarkBOT and how it works.</p>
