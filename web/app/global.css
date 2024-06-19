@@ -7,7 +7,8 @@
 html,
 body {
   height: 100%;
-  font-family: 'Poppins', Inter, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .wallet-adapter-button-trigger {
@@ -26,10 +27,20 @@ header {
   color: var(--black);
 }
 
+header.dark {
+  background-color: var(--dark-gray);
+  color: var(--white);
+}
+
 footer {
   background-color: var(--white);
   color: var(--black);
   border-top: 1px solid var(--gray-300);
+}
+
+footer.dark {
+  background-color: var(--dark-gray);
+  color: var(--white);
 }
 
 footer a img {

@@ -3,6 +3,7 @@ const { join } = require('path');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     join(
       __dirname,
@@ -31,13 +32,14 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          primary: "#C7B1A3",
+          primary: "#CBB5A7",
           secondary: "#2f2f2f",
           accent: "#202020",
           neutral: "#F9F9FB",
           "base-100": "#ffffff",
         },
       },
+      'dark',
     ],
   },
 };

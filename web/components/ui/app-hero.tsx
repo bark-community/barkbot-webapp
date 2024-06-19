@@ -11,9 +11,9 @@ interface AppHeroProps {
 
 export const AppHero: React.FC<AppHeroProps> = ({ title, subtitle, demoLink, documentationLink }) => {
   return (
-    <section className="bg-gradient-to-r from-white py-24 px-6">
+    <section className="bg-light-gray py-24 px-6">
       <div className="container mx-auto text-center">
-        <img src="/architecture.svg" alt="How it Works Logo" className="mx-auto mb-12 w-21 h-20" />
+        <img src="/architecture.svg" alt="How it Works Icon" className="mx-auto mb-12 w-21 h-20" />
         <h1 className="text-4xl md:text-5xl font-bold text-black mb-4 font-poppins">{title}</h1>
         <p className="text-md md:text-lg text-gray-500 mb-8 font-poppins">{subtitle}</p>
         <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">

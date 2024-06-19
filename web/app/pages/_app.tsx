@@ -1,23 +1,23 @@
 import React from 'react';
 import { AppProps } from 'next/app';
-import AppHero from '@/components/ui/app-hero';
+import UiLayout from '@/components/ui/ui-layout';
 import '@/styles/globals.css';
 
 const links = [
-  { label: 'GitHub', path: 'https://github.com/bark-community/bark-bot-telegram-api' },
   { label: 'Twitter', path: 'https://twitter.com/bark_protocol' },
-  { label: 'Discord', path: 'https://discord.com/invite/yourinvite' },
+  { label: 'Discord', path: 'https://discord.gg/H9en8eHzn2' },
   { label: 'Telegram', path: 'https://t.me/bark_protocol' },
-  { label: 'Medium', path: 'https://medium.com/@barkprotocol' },
   { label: 'Instagram', path: 'https://instagram.com/bark.protocol' },
+  { label: 'GitHub', path: 'https://github.com/bark-community/barkbot-telegram' },
+  { label: 'Medium', path: 'https://medium.com/@barkprotocol' },
 ];
 
-function BarkBOTApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <AppHero links={links}>
+    <UiLayout links={links}>
       <Component {...pageProps} />
-    </AppHero>
+    </UiLayout>
   );
 }
 
-export default BarkBOTApp;
+export default MyApp;
