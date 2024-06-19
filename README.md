@@ -2,11 +2,11 @@
 
 BarkBOT is a powerful trading assistant designed to facilitate efficient and secure trading of BARK and other tokens on the Solana blockchain through an intuitive Telegram interface. This repository contains the source code for the BarkBOT web application, including swap and bot features, built using modern web technologies such as React and Next.js.
 
-## Dashboard UI
+#### Dashboard UI
 
 ![BarkBOT UI](./assets/ui-screenshot.png)
 
-## Swap Features
+#### Swap
 ![Swap](./assets/swap-feature-screenshot.png)
 
 ## Table of Contents
