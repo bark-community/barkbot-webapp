@@ -20,13 +20,19 @@ const BotUI: React.FC = () => {
   ];
 
   return (
-    <section id="features" className="py-16 bg-white">
-      <div className="container mx-auto">
+    <section id="features" className="py-16 bg-gradient-to-r from-light-gray to-white">
+      <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center">Features</h2>
+        <p className="text-lg text-gray-700 text-center mt-4">
+          Explore the powerful features of BarkBOT designed to enhance your trading experience on the Solana blockchain.
+        </p>
         <div className="flex flex-wrap mt-8">
           {features.map((feature, index) => (
             <div key={index} className="w-full p-4 md:w-1/3">
-              <BotFeature title={feature.title} description={feature.description} />
+              <div className="p-6 bg-white rounded shadow-md hover:shadow-lg transition-shadow duration-300">
+                <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
+                <p className="text-gray-700">{feature.description}</p>
+              </div>
             </div>
           ))}
         </div>
